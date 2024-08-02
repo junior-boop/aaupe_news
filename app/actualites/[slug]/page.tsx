@@ -57,7 +57,7 @@ export default async function Articles({ params }: DataParams) {
     )
 }
 
-export function Ilot_2() {
+function Ilot_2() {
     return (
         <div className="w-full lg:w-[450px]">
             <div className="w-full lg:w-[450px] bg-[#8bdbff] text-[#0b2735] px-4 py-4 lg:px-10 lg:py-10 mb-6">
