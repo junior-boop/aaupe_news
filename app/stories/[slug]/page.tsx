@@ -78,7 +78,7 @@ function Ilot_2() {
                 </div>
             </div>
             <div>
-                <a href="/impact" className="bg-[#A3CD39] text-[#242e0a] hover:text-[#242e0a] flex items-center justify-between py-3 px-4 lg:px-6">
+                <a href="https://aaupe.org.ma/impact" className="bg-[#A3CD39] text-[#242e0a] hover:text-[#242e0a] flex items-center justify-between py-3 px-4 lg:px-6">
                     Notre Impact
                     <RiArrowRightUpLine className="w-6 h-6 lg:w-9 lg:h-9 " />
                 </a>

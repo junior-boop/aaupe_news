@@ -55,7 +55,7 @@ function First_Element({ data }: element) {
     const paragraph = content.filter((el: any) => el.type === 'paragraph')
     const desc = paragraph[0].children[0].text.length > 100 ? `${paragraph[0].children[0].text.substring(0, 120)}...` : paragraph[0].children[0].text
     return (
-        <Link href={`/actualites/${slug}`} className="flex lg:col-span-3 mb-9">
+        <Link href={`https://aaupe.org.ma/actualites/article?slug=${slug}`} className="flex lg:col-span-3 mb-9">
             <div className="w-full bg-cover bg-no-repeat bg-center aspect-[16/7] flex justify-end" style={{ backgroundImage: `url(${image})` }}>
                 <div className="lg:w-[400px] bg-[#000a] px-9 py-8 h-full flex justify-between flex-col">
                     <div>
@@ -89,7 +89,7 @@ function Element({ data }: element) {
 
 
     return (
-        <Link href={`/actualites/${slug}`}>
+        <Link href={`https://aaupe.org.ma/actualites/article?slug=${slug}`}>
             <div className="aspect-[3/2] bg-no-repeat bg-center bg-cover" style={{ backgroundImage: `url(${image})` }}></div>
             <div className="px-6 py-4 bg-slate-100">
                 <div className="font-judson text-[32px] font-bold first-letter:uppercase mb-4" style={{ lineHeight: 1.2 }}>

@@ -71,7 +71,7 @@ function First_Element({ data }: first_element) {
 
     return (
         <div className="max-w-[1280px] w-full h-full mx-auto flex gap-12">
-            <Link href={`/stories/${titleSlug}`} className="flex-1 flex h-[600px] items-end">
+            <Link href={`${process.env.URL}/stories/article?slug=${titleSlug}`} className="flex-1 flex h-[600px] items-end">
                 <div className="relative">
                     <div className="absolute z-0 top-[-55px] left-[-50px] opacity-40">
                         <RiDoubleQuotesL className="w-32 h-32 text-white" />
@@ -104,7 +104,7 @@ function Element({ data }: first_element) {
 
 
     return (
-        <Link href={`/stories/${slug}`}>
+        <Link href={`${process.env.URL}/stories/article?slug=${slug}`}>
             <div className="aspect-[3/2] bg-no-repeat bg-center bg-cover" style={{ backgroundImage: `url(${image})` }}></div>
             <div className="px-6 py-4 bg-slate-100">
                 <div className="font-judson text-[32px] font-bold first-letter:uppercase mb-4" style={{ lineHeight: 1.2 }}>
