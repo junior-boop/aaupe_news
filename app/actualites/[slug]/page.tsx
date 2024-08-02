@@ -4,7 +4,7 @@ import { RiArrowRightUpLine, RiFacebookCircleFill, RiInstagramFill, RiLinkedinBo
 import { gql } from "graphql-request";
 import { client } from "@/app/api/graphql";
 
-export async function getDate(slug: string) {
+async function getData(slug: string) {
     const query = gql/* GraphQL*/`
     query MyQuery {
         article(where: {titleSlug: "${slug}"}, stage: PUBLISHED) {
@@ -37,9 +37,7 @@ interface DataParams {
 
 export default async function Articles({ params }: DataParams) {
     const { slug } = params
-    const { titleSlug, title, picture, publishedAt, content } = await getDate(slug)
-
-    console.log(slug)
+    const { titleSlug, title, picture, content } = await getData(slug)
 
     return (
         <div className="max-w-[1280px] w-full mx-auto pt-16">

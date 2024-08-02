@@ -5,7 +5,7 @@ import Link from "next/link";
 import { client } from "../api/graphql";
 import { doc_Query, Query, Story } from "../api/graphql-type";
 
-export async function getData() {
+async function getData() {
     const query = gql/* GraphQL */`
         query MyQuery {
             stories(orderBy: publishedAt_DESC, stage: PUBLISHED, first: 20) {

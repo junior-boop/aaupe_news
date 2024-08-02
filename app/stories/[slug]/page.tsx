@@ -4,7 +4,7 @@ import { RiArrowRightUpLine, RiFacebookCircleFill, RiInstagramFill, RiLinkedinBo
 import { gql } from "graphql-request";
 import { client } from "@/app/api/graphql";
 
-export async function getData(slug: string) {
+async function getData(slug: string) {
     const query = gql/* GraphQL */`
         query MyQuery {
             story(where: {titleSlug: "${slug}"}, stage: PUBLISHED) {
